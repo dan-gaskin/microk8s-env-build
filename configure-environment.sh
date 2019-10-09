@@ -82,3 +82,4 @@ token=$(multipass exec microk8s-node1 -- /snap/bin/microk8s.kubectl -n kube-syst
 multipass exec microk8s-node1 -- /snap/bin/microk8s.kubectl -n kube-system describe secret $token
 kubectl cluster-info
 kubectl get no
+exit
