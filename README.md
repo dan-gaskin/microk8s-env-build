@@ -25,3 +25,7 @@ multipass stop microk8s-node1 microk8s-node2 microk8s-node3
 ```
 multipass delete microk8s-node1 microk8s-node2 microk8s-node3; multipass purge
 ```
+
+## accessing the dashboard
+kubectl proxy --accept-hosts=.* --address=0.0.0.0
+http://127.0.0.1:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#/error?namespace=default
