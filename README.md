@@ -3,6 +3,12 @@
 ## configure-environment.sh
 The purpose of the configure-environment.sh script is to set up a 3 node microk8s cluster on your Mac, and set your local kube config file to point at the cluster. If you do not have multipass or kubectl installed locally, the script will install these via brew.
 
+To see running kube nodes, see the output of the script. Alternatively run
+
+```
+kubectl get no
+```
+
 ## prerequisite
 - brew
 
