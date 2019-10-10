@@ -16,7 +16,7 @@ kubectl get no
 After running configure-environment.sh, your cluster will be up and running. To run the cluster in the future
 
 ```
-multipass start microk8s-node1 microk8s-node2 microk8s-node3; multipass exec microk8s-node1 -- /snap/bin/microk8s.start; multipass exec microk8s-node2 -- /snap/bin/microk8s.start; multipass exec microk8s-node3 -- /snap/bin/microk8s.start
+multipass start microk8s-node1 microk8s-node2 microk8s-node3
 ```
 
 ## stopping the cluster
